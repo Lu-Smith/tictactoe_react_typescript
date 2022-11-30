@@ -9,7 +9,7 @@ const Main: React.FC = () => {
     <div className='Main'>
       <button>Play</button>
       <div className="player active">{status}</div>
-      <Board />
+      <Board value={null}/>
       <div className='results'>Results</div>
     </div>
   )

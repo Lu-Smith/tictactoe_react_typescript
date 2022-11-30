@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { isFunctionExpression } from 'typescript';
 import '../styles/Square.css';
 
-const Square: React.FC = () => {
+interface SquareProps {
+    value: 'X' | 'O' | null;
+}
+
+const Square: React.FC<SquareProps> = () => {
+
+    const [value, setValue] = useState('');
+
+    const updateValue = () => {
+       setValue('X');
+    }
   return (
-    <div className='Square'>X</div>
+    <div className='Square' onClick={updateValue}>{value}</div>
   )
 }
 
