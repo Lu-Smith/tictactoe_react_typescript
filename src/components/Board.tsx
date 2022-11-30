@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Board.css';
 
 const Board = () => {
   return (
-    <div>Board</div>
+    <div className='Board'>Board</div>
   )
 }
 
