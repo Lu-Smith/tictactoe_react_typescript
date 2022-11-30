@@ -5,6 +5,9 @@
     line-height: 45px;
     font-family: 'Rubik Glitch', cursive;
     height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Header span {

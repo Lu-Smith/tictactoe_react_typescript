@@ -5,6 +5,9 @@
     font-size: 20px;
     line-height: 30px;
     height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Footer a {
