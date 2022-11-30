@@ -1,5 +1,5 @@
 .Main {
-    font-size: 20px;
+    font-size: 25px;
     padding: 20px;
     background-color: rgb(145, 144, 144);
 }
@@ -51,6 +51,15 @@
     margin: 20px 0;
  }
 
- .active {
+ .Main .active {
     color: rgb(0, 238, 255);;
+ }
+
+ .Main .results {
+    margin: 20px auto;
+    color: rgb(245, 78, 209);
+    background-color: black;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid rgb(245, 78, 209);
  }
