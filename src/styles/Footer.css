@@ -1,0 +1,13 @@
+.Footer {
+    background-color: rgb(61, 16, 104);
+    color: white;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.Footer a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
