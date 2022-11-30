@@ -6,13 +6,13 @@ interface BoardProps {
     values: (string | number)[];
     player: string;
     result: string;
+    active: string;
     updatedValue(i: number): void;
 }
 
 const Board: React.FC<BoardProps> = (props) => {
-    console.log(props);
     const renderSquare = (i: number): ReactNode => {
-       return <Square value={props.values[i]} player={props.player} result={props.result} updatedValue={() => props.updatedValue(i)} />
+       return <Square  active={props.active} value={props.values[i]} player={props.player} result={props.result} updatedValue={() => props.updatedValue(i)} />
     }
     
   return (
