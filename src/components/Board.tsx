@@ -3,15 +3,16 @@ import '../styles/Board.css';
 import Square from './Square';
 
 interface BoardProps {
-    value: (string | null);
+    values: (string | null)[];
     player: string;
     result: string;
     updatedValue(i: number): void;
 }
 
 const Board: React.FC<BoardProps> = (props) => {
+    console.log(props);
     const renderSquare = (i: number): ReactNode => {
-       return <Square value={props.value} player={props.player} result={props.result} updatedValue={() => props.updatedValue(i)} />
+       return <Square value={props.values[i]} player={props.player} result={props.result} updatedValue={() => props.updatedValue(i)} />
     }
     
   return (
