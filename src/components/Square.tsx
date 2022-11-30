@@ -3,7 +3,7 @@ import '../styles/Square.css';
 
 const Square: React.FC = () => {
   return (
-    <div className='Square'>S</div>
+    <div className='Square'>X</div>
   )
 }
 

@@ -50,10 +50,11 @@
 
  .Main .player {
     margin: 20px 0;
+    color: rgb(245, 78, 209);
  }
 
  .Main .active {
-    color: rgb(0, 238, 255);;
+    color: rgb(0, 238, 255);
  }
 
  .Main .results {
