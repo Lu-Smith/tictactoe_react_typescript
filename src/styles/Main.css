@@ -2,3 +2,46 @@
     font-size: 20px;
     padding: 20px;
 }
+
+.Main button {
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 200ms ease-in-out;
+    border: none;
+    background-color: rgb(245, 78, 209);
+    color: rgb(0, 238, 255);
+    position: relative;
+    cursor: pointer;
+}
+
+.Main  button::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: -1;
+    transform: scale(1.5);
+    transition: all 500ms ease-in-out;
+}
+
+.Main button:hover::before, button:focus::before {
+    transform: scale(0);
+ }
+
+ .Main button {
+    z-index: 1;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+ }
+
+ .Main button:hover, button:focus {
+    color: white;
+    transform: translateY(5px);
+    box-shadow: none;
+ }
