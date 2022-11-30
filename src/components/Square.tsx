@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/Square.css';
 
 const Square: React.FC = () => {
   return (
-    <div>Square</div>
+    <div className='Square'>S</div>
   )
 }
 
