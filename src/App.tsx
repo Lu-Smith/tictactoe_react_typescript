@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main value={null} player={'Player 1'} result={''} />
+      <Main />
       <Footer />
     </div>
   );
