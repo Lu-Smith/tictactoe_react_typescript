@@ -4,7 +4,7 @@ import Board from './Board';
 
 interface MainProps {
   value: 'X' | 'O' | null;
-  player: 'Player 1' | 'Player 2';
+  player: string;
   result: string;
 }
 
@@ -24,7 +24,7 @@ const Main: React.FC<MainProps> = () => {
     <div className='Main'>
       <button onClick={startGame}>Play</button>
       <div className="player active">{player}</div>
-      <Board value={value}/>
+      <Board value={value} player={player} result={result}/>
       <div className='results'>{result}</div>
     </div>
   )

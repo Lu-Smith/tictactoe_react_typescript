@@ -3,27 +3,29 @@ import '../styles/Board.css';
 import Square from './Square';
 
 interface BoardProps {
-    value: 'X' | 'O' | null;
+    value: string | null;
+    player: string;
+    result: string;
 }
 
-const Board: React.FC<BoardProps> = () => {
+const Board: React.FC<BoardProps> = (props) => {
     
   return (
     <div className='Board'>
         <div className='board-row'>
-            <Square value = {null}/>
-            <Square value = {null}/>
-            <Square value = {null}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
         </div>
         <div className='board-row'>
-            <Square value = {null}/>
-            <Square value = {null}/>
-            <Square value = {null}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
         </div>
         <div className='board-row'>
-            <Square value = {null}/>
-            <Square value = {null}/>
-            <Square value = {null}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
+            <Square value={props.value} player={props.player} result={props.result}/>
         </div>
     </div>
   )
