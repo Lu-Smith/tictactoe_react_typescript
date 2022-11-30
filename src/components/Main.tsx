@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div className='Main'>
       <button>Play</button>
-      <div className="player">Player 1</div>
+      <div className="player active">Player1</div>
       <Board />
       <div className='results'>Results</div>
     </div>

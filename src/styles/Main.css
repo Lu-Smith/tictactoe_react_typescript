@@ -1,6 +1,7 @@
 .Main {
     font-size: 20px;
     padding: 20px;
+    background-color: rgb(145, 144, 144);
 }
 
 .Main button {
@@ -44,4 +45,12 @@
     color: white;
     transform: translateY(5px);
     box-shadow: none;
+ }
+
+ .Main .player {
+    margin: 20px 0;
+ }
+
+ .active {
+    color: rgb(0, 238, 255);;
  }
