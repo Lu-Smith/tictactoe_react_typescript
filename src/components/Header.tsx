@@ -3,7 +3,9 @@ import '../styles/Header.css';
 
 const Header = () => {
   return (
-    <div className='Header'>Tic Tac Toe</div>
+    <div className='Header'>
+      <span>Tic Tac Toe</span>
+    </div>
   )
 }
 

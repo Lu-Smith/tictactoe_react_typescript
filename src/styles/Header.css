@@ -1,8 +1,18 @@
 .Header {
     background-color: rgb(61, 16, 104);
-    color: white;
     padding: 20px 0;
     font-size: 40px;
     line-height: 45px;
     font-family: 'Rubik Glitch', cursive;
 }
+
+.Header span {
+    display: inline-flex;
+    color: hsl(0, 29%, 97%);
+    transition: all 200ms ease-in-out;
+    background: linear-gradient(to right , hsl(45, 17%, 95%) 0%, hsl(305, 87%, 55%) 20%, hsl(180, 98%, 49%) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
