@@ -4,7 +4,7 @@ import React from 'react';
 import '../styles/Square.css';
 
 interface SquareProps {
-    value: string | null | number;
+    value: string | number;
     player: string;
     result: string;
     updatedValue(): void;
