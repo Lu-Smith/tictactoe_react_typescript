@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Header.css';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <div className='Header'>
       <span>Tic Tac Toe</span>
