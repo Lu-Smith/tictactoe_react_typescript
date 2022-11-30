@@ -3,7 +3,7 @@ import '../styles/Board.css';
 import Square from './Square';
 
 interface BoardProps {
-    values: (string | null)[];
+    values: (string | null | number)[];
     player: string;
     result: string;
     updatedValue(i: number): void;

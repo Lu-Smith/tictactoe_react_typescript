@@ -8,45 +8,53 @@ const Main: React.FC = () => {
 
   const [player, setPlayer] = useState<string>('Player 1');
   const [value, setValue] = useState<string | null>(null);
-  const [values, setValues] = useState<(string | null)[]>([]);
+  const [values, setValues] = useState<(string | null | number)[]>(["", 1, 2, 3, 4, 5,6, 7, 8, 9 ]);
   const [result, setResult] = useState<string>('');
   const [turn, setTurn] = useState<boolean>(true);
+
+  
 
   const startGame = () => {
      setPlayer('Player 1')
      setValue(null)
      setResult('Your move player 1')
   };
+
   let currentValue: (string | null);
-  let currentScore: (string | null )[] = ['', '', '','', '', '','', '', '', '', '' ];
-
-
-
 
 
   const updatedValue = (i:number) : void => {
+
+    let addSymbol = values.indexOf('');
     if (turn === false && player === 'Player 2') {
-      setValue('O');
+      
+      setValue('X');
       setPlayer('Player 1');
       setResult('Your move player 1');
       setTurn(true);
       currentValue = 'O';
       i++;
+      addSymbol = values.indexOf(i-1);
+     
     } else if (turn === true && player === 'Player 1') {
-      setValue('X');
+      setValue('0');
       setPlayer('Player 2');
       setResult('Your move player 2');
       setTurn(false);
       currentValue = 'X';
       i++;
+      addSymbol = values.indexOf(i-1);
     } else {
       return;
     }
-    currentScore[i - 1] = currentValue;
-    console.log(i);
-    console.log(currentScore);
-    setValues(currentScore);
-    console.log(values);
+     
+    if (addSymbol !== null) {
+      values[addSymbol] = currentValue;
+    }
+    
+   
+    setValues(values);
+    console.log(i-1);
 }
 
   return (
