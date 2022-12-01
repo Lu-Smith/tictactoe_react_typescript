@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: 2px;
 }
 
 .Footer a {
@@ -41,5 +42,14 @@
     }
     100% {
         background-position: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Footer {
+        padding: 20px 0;
+        font-size: 12px;
+        line-height: 20px;
     }
 }

@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     border: 2px solid black;
-
 }
 
 .player1 {
@@ -21,3 +20,12 @@
 .player2 {
     color: rgb(0, 238, 255);
 }
+
+@media only screen and (max-width: 600px) {
+    .Square {
+        width: 90px;
+        height: 90px;
+        font-size: 40px;
+        border: 1px solid black;
+    }
+ }

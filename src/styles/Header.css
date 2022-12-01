@@ -20,3 +20,10 @@
     animation: shine 3s infinite linear;
 }
 
+@media only screen and (max-width: 600px) {
+    .Header {
+        padding: 20px 0;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
