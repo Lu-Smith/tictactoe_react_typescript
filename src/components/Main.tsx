@@ -8,7 +8,7 @@ const Main: React.FC = () => {
 
   const [player, setPlayer] = useState<string>('Player 1');
   const [value, setValue] = useState<string | null>(null);
-  const [values, setValues] = useState<(string | number)[]>(['', 1, 2, 3, 4, 5, 6, 7, 8, 9 ]);
+  const [values, setValues] = useState<(string | number)[]>([0,1,2,3,4,5,6,7,8,9]);
   const [result, setResult] = useState<string>('');
   const [turn, setTurn] = useState<boolean>(true);
   const [active, setActive] = useState<string>('transparent');
@@ -63,7 +63,7 @@ const Main: React.FC = () => {
     }
     
     setValues(values);
-    console.log(i-1);
+    console.log(values);
 }
 
   return (
