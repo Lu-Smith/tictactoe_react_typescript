@@ -126,16 +126,11 @@ const Main: React.FC = () => {
       setActive('player2');
       setPlayer('Player 2');
       setValue('won');
-    } else if (!values.includes(0 && 1 && 2 && 3 && 4 && 5 && 6 && 7 && 8 && 9)){
+    } else if (values[1] !== 1 && values[2] !== 2 && values[3] !== 23 && values[4] !== 4 && values[5] !== 5 && values[6] !== 6 && values[7] !== 7 && values[8] !== 8 && values[9] !== 9) {
       setResult('Draw');
-      setValue('play again');
-      setPlayer('');
-      console.log(values);
     }
       }
-    
     setValues(values);
- 
 }
 
   return (
