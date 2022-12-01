@@ -50,11 +50,6 @@
 
  .Main .player {
     margin: 20px 0;
-    color: rgb(245, 78, 209);
- }
-
- .Main .active {
-    color: rgb(0, 238, 255);
  }
 
  .Main .results {
@@ -66,3 +61,14 @@
     border: 2px solid rgb(245, 78, 209);
  }
 
+ .player1 {
+   color: rgb(245, 78, 209);
+ }
+
+ .transparent {
+   color: transparent;
+ }
+
+ .player2 {
+   color: rgb(0, 238, 255);
+ }

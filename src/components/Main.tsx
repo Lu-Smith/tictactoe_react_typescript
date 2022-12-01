@@ -12,8 +12,6 @@ const Main: React.FC = () => {
   const [result, setResult] = useState<string>('');
   const [turn, setTurn] = useState<boolean>(true);
   const [active, setActive] = useState<string>('transparent');
-  const playerDisplay: HTMLElement | null = document.getElementById('player');
-  const valueDisplay: HTMLElement | null = document.getElementById('value');
 
   const startGame = () => {
      setPlayer('Player 1')
@@ -25,10 +23,8 @@ const Main: React.FC = () => {
 
 
   const updatedValue = (i:number) : void => {
-
     let addSymbol;
     if (turn === false && player === 'Player 2') {
-      
       setValue('X');
       setPlayer('Player 1');
       setResult('Your move player 1');
@@ -37,8 +33,7 @@ const Main: React.FC = () => {
       currentValue = 'O';
       i++;
       addSymbol = values.indexOf(i-1);
-      playerDisplay?.classList.remove('active');
-      valueDisplay?.classList.remove('active');
+  
       
 
      
@@ -51,8 +46,7 @@ const Main: React.FC = () => {
       currentValue = 'X';
       i++;
       addSymbol = values.indexOf(i-1);
-      playerDisplay?.classList.add('active');
-      valueDisplay?.classList.add('active');
+  
       
     } else {
       return;
@@ -69,8 +63,8 @@ const Main: React.FC = () => {
   return (
     <div className='Main'>
       <button onClick={startGame}>Play</button>
-      <div className="player active" id='player'>{player}</div>
-      <div className='player active' id='value'>{value}</div>
+      <div className='player' id='player'><span className={active}>{player}</span></div>
+      <div className='player' id='value'><span className={active}>{value}</span></div>
       <Board active={active} values={values} player={player} result={result} updatedValue={i => updatedValue(i)}/>
       <div className='results'>{result}</div>
     </div>
