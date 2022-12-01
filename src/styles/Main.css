@@ -49,11 +49,11 @@
  }
 
  .Main .player {
-    margin: 20px 0;
+    margin: 15px 0;
  }
 
  .Main .results {
-    margin: 20px auto;
+    margin: 10px auto;
     color: rgb(245, 78, 209);
     background-color: black;
     width: 300px;
