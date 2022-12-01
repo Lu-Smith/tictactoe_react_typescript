@@ -12,9 +12,8 @@ const Main: React.FC = () => {
   const [active, setActive] = useState<string>('transparent');
 
   const startGame = () => {
-     setPlayer('Player 1')
-     setValue(null)
-     setResult('Your move player 1')
+    window.location.reload(); 
+     setResult('Your move player 1');
   };
 
   let currentValue: (string | null);
@@ -127,15 +126,16 @@ const Main: React.FC = () => {
       setActive('player2');
       setPlayer('Player 2');
       setValue('won');
-    } else if (!values.includes(1 && 2 && 3 && 4 && 5 && 6 && 7 && 8 && 9)){
+    } else if (!values.includes(0 && 1 && 2 && 3 && 4 && 5 && 6 && 7 && 8 && 9)){
       setResult('Draw');
       setValue('play again');
       setPlayer('');
+      console.log(values);
     }
       }
     
     setValues(values);
-
+ 
 }
 
   return (
