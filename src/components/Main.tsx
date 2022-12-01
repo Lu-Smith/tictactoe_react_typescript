@@ -21,7 +21,7 @@ const Main: React.FC = () => {
 
   const updatedValue = (i:number) : void => {
     let addSymbol;
-    if (turn === false && player === 'Player 2') {
+    if (turn === false && player === 'Player 2' && values[i] !== 'X' && values[i] !== 'O') {
       setValue('X');
       setPlayer('Player 1');
       setResult('Your move player 1');
@@ -30,7 +30,7 @@ const Main: React.FC = () => {
       currentValue = 'O';
       i++;
       addSymbol = values.indexOf(i-1);
-    } else if (turn === true && player === 'Player 1') {
+    } else if (turn === true && player === 'Player 1' && values[i] !== 'X' && values[i] !== 'O') {
       setValue('0');
       setPlayer('Player 2');
       setResult('Your move player 2');
