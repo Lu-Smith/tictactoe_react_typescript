@@ -136,8 +136,10 @@ const Main: React.FC = () => {
   return (
     <div className='Main'>
       <button onClick={startGame}>Play</button>
-      <div className='player' id='player'><span className={active}>{player}</span></div>
-      <div className='player' id='value'><span className={active}>{value}</span></div>
+      <div className='player-headline'>
+        <div className='player' id='player'><span className={active}>{player}</span></div>
+        <div className='player' id='value'><span className={active}>{value}</span></div>
+      </div>
       <Board active={active} values={values} player={player} result={result} updatedValue={i => updatedValue(i)}/>
       <div className='results'>{result}</div>
     </div>
