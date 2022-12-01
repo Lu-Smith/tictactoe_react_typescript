@@ -12,7 +12,7 @@ interface BoardProps {
 
 const Board: React.FC<BoardProps> = (props) => {
     const renderSquare = (i: number): ReactNode => {
-       return <Square  active={props.active} value={props.values[i]} player={props.player} result={props.result} updatedValue={() => props.updatedValue(i)} />
+       return <Square active={props.active} value={props.values[i]} player={props.player} result={props.result} updatedValue={() => props.updatedValue(i)} />
     }
     
   return (

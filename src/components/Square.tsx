@@ -13,7 +13,7 @@ const Square: React.FC<SquareProps> = (props) => {
 
   return (
     <div className='Square' onClick={props.updatedValue}>
-        <span className={props.active}>{props.value}</span></div>
+        <span className={(props.value === 'X' || props.value === 'O') ? props.active : 'transparent'}>{props.value}</span></div>
     
   )
 }
