@@ -46,9 +46,94 @@ const Main: React.FC = () => {
     if (values[i-1] !== 'X' && values[i-1] !== 'O') {
       values[addSymbol] = currentValue;
     }
+
+   for (i = 0; i < values.length; i++) {
+    if (values[1] === 'X' && values[2] === 'X' && values[3] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[4] === 'X' && values[5] === 'X' && values[6] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[7] === 'X' && values[8] === 'X' && values[9] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[1] === 'X' && values[4] === 'X' && values[7] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[2] === 'X' && values[5] === 'X' && values[8] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[3] === 'X' && values[6] === 'X' && values[9] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[1] === 'X' && values[5] === 'X' && values[9] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[3] === 'X' && values[5] === 'X' && values[7] === 'X') {
+      setResult('Game Over');
+      setActive('player1');
+      setPlayer('Player 1');
+      setValue('won');
+    } else if (values[1] === 'O' && values[2] === 'O' && values[3] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+    } else if (values[4] === 'O' && values[5] === 'O' && values[6] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+      setValue('won');
+    } else if (values[7] === 'O' && values[8] === 'O' && values[9] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+      setValue('won');
+    } else if (values[1] === 'O' && values[4] === 'O' && values[7] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+      setValue('won');
+    } else if (values[2] === 'O' && values[5] === 'O' && values[8] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+      setValue('won');
+    } else if (values[3] === 'O' && values[6] === 'O' && values[9] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+      setValue('won');
+    } else if (values[1] === 'O' && values[5] === 'O' && values[9] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+      setValue('won');
+    } else if (values[3] === 'O' && values[5] === 'O' && values[7] === 'O') {
+      setResult('Game Over');
+      setActive('player2');
+      setPlayer('Player 2');
+      setValue('won');
+    } 
+      }
     
+
+
     setValues(values);
-    console.log(values);
+
 }
 
   return (
