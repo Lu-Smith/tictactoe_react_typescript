@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import '../styles/Main.css';
 import Board from './Board';
 
-
-
 const Main: React.FC = () => {
 
   const [player, setPlayer] = useState<string>('Player 1');
@@ -21,7 +19,6 @@ const Main: React.FC = () => {
 
   let currentValue: (string | null);
 
-
   const updatedValue = (i:number) : void => {
     let addSymbol;
     if (turn === false && player === 'Player 2') {
@@ -33,10 +30,6 @@ const Main: React.FC = () => {
       currentValue = 'O';
       i++;
       addSymbol = values.indexOf(i-1);
-  
-      
-
-     
     } else if (turn === true && player === 'Player 1') {
       setValue('0');
       setPlayer('Player 2');
@@ -46,8 +39,6 @@ const Main: React.FC = () => {
       currentValue = 'X';
       i++;
       addSymbol = values.indexOf(i-1);
-  
-      
     } else {
       return;
     }
