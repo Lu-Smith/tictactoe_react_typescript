@@ -7,13 +7,13 @@ const Main: React.FC = () => {
   const [player, setPlayer] = useState<string>('Player 1');
   const [value, setValue] = useState<string | null>(null);
   const [values, setValues] = useState<(string | number)[]>([0,1,2,3,4,5,6,7,8,9]);
-  const [result, setResult] = useState<string>('');
+  const [result, setResult] = useState<string>('Your turn Player 1');
   const [turn, setTurn] = useState<boolean>(true);
   const [active, setActive] = useState<string>('transparent');
 
   const startGame = () => {
     window.location.reload(); 
-     setResult('Your move player 1');
+     setResult('');
   };
 
   let currentValue: (string | null);
