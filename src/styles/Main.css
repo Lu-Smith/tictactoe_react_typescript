@@ -56,6 +56,11 @@
    flex-direction: row;
    align-items: center;
    justify-content: center;
+   background-color: rgba(8, 8, 8, 0.8);
+   width: 500px;
+   margin: 10px auto;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
  }
 
  .Main .player {
