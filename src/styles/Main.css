@@ -3,6 +3,9 @@
     padding: 20px;
     background-color: rgb(145, 144, 144);
     height: 82vh;
+    background-image: url('../tic\ tac\ toe\ background.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .Main button {
