@@ -141,7 +141,7 @@ const Main: React.FC = () => {
         <div className='player' id='value'><span className={active}>{value}</span></div>
       </div>
       <Board active={active} values={values} player={player} result={result} updatedValue={i => updatedValue(i)}/>
-      <div className='results'>{result}</div>
+      {result ? <div className='results'>{result}</div> : null}
     </div>
   )
 };
